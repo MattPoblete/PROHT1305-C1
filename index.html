@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sabores de Chile</title>
 </head>
-<body>
-  
+<body style="font-family: Arial, sans-serif; background-color: #f8f8f8; margin: 0; padding: 0;">
+  <header style="background-color: #8B0000; color: #fff; padding: 20px 0; text-align: center;">
+    <h1 style="margin: 0; font-size: 2.5em;">Restaurante Sabores de Chile</h1>
+    <p style="font-size: 1.2em; font-weight: bold;">Denominación legal: Sabores de Chile SpA</p>
+    <p style="font-size: 1.1em;">Gastronomía chilena tradicional en el corazón de Santiago</p>
+    <p style="font-size: 1.1em;"><b>Dirección:</b> Av. Providencia 1234, Santiago, Chile</p>
+  </header>
+
+  <nav style="background-color: #e0e0e0; padding: 10px 0; text-align: center;">
+    <a href="#menu" style="margin: 0 15px; color: #8B0000; font-weight: bold; text-decoration: none;">Menú</a>
+    <a href="#promociones" style="margin: 0 15px; color: #8B0000; font-weight: bold; text-decoration: none;">Promociones</a>
+    <a href="#reserva" style="margin: 0 15px; color: #8B0000; font-weight: bold; text-decoration: none;">Reservas</a>
+  </nav>
+
+  <main style="max-width: 800px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px #ccc;">
+    <section id="menu">
+      <h2 style="color: #8B0000;">Menú</h2>
+      <h3 style="color: #333;">Platos principales</h3>
+      <ul>
+        <li><b>Cazuela de Vacuno</b> <span style="color: #8B0000; font-weight: bold;">$8.500</span></li>
+        <li><b>Pastel de Choclo</b> <span style="color: #8B0000; font-weight: bold;">$7.900</span></li>
+        <li><b>Empanadas de Pino</b> <span style="color: #8B0000; font-weight: bold;">$2.000</span></li>
+        <li><b>Porotos Granados</b> <span style="color: #8B0000; font-weight: bold;">$7.500</span></li>
+      </ul>
+      <h3 style="color: #333;">Postres</h3>
+      <ul>
+        <li><b>Leche Asada</b> <span style="color: #8B0000; font-weight: bold;">$3.000</span></li>
+        <li><b>Mote con Huesillo</b> <span style="color: #8B0000; font-weight: bold;">$2.500</span></li>
+        <li><b>Torta de Mil Hojas</b> <span style="color: #8B0000; font-weight: bold;">$3.500</span></li>
+      </ul>
+      <h3 style="color: #333;">Bebidas</h3>
+      <ul>
+        <li><b>Jugo Natural</b> <span style="color: #8B0000; font-weight: bold;">$2.000</span></li>
+        <li><b>Chicha</b> <span style="color: #8B0000; font-weight: bold;">$2.500</span></li>
+        <li><b>Vino de la Casa</b> <span style="color: #8B0000; font-weight: bold;">$3.000</span></li>
+        <li><b>Bebidas Gaseosas</b> <span style="color: #8B0000; font-weight: bold;">$1.500</span></li>
+      </ul>
+      <h3 style="color: #333;">Especialidades de la casa</h3>
+      <ul>
+        <li><b>Curanto en Olla</b> <span style="color: #8B0000; font-weight: bold;">$12.000</span></li>
+        <li><b>Parrillada Chilena</b> <span style="color: #8B0000; font-weight: bold;">$15.000</span></li>
+      </ul>
+    </section>
+
+    <section id="promociones" style="margin-top: 40px;">
+      <h2 style="color: #8B0000;">Promociones Especiales</h2>
+      <div style="background-color: #ffe4b2; border-left: 5px solid #8B0000; padding: 15px; margin-bottom: 20px;">
+        <b style="color: #8B0000;">¡2x1 en Empanadas de Pino!</b><br>
+        <span>Disfruta de nuestra promoción especial todos los lunes. <b>Válido hasta el 30 de junio.</b></span>
+      </div>
+      <div style="background-color: #e0ffd8; border-left: 5px solid #228B22; padding: 15px;">
+        <b style="color: #228B22;">Menú Ejecutivo</b><br>
+        <span>Incluye plato principal, bebida y postre por <b>$10.000</b>. <b>Vigencia:</b> de lunes a viernes, 12:00 a 16:00 hrs.</span>
+      </div>
+    </section>
+
+    <section id="reserva" style="margin-top: 40px;">
+      <h2 style="color: #8B0000;">Reserva en línea</h2>
+      <form style="display: flex; flex-direction: column; max-width: 400px; gap: 10px;" autocomplete="off">
+        <label for="nombre"><b>Nombre:</b></label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" required>
+        <label for="fecha"><b>Fecha de reserva:</b></label>
+        <input type="date" id="fecha" name="fecha" required>
+        <label for="personas"><b>Número de personas:</b></label>
+        <input type="number" id="personas" name="personas" min="1" max="20" required>
+        <button type="submit" style="background-color: #8B0000; color: #fff; font-weight: bold; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Reservar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="background-color: #8B0000; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px;">
+    &copy; 2025 Sabores de Chile SpA. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
