@@ -4,80 +4,297 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sabores de Chile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      max-width: 100dvw;
+    }
+    header {
+      background-color: #8B0000;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.1em;
+    }
+    header .bold {
+      font-weight: bold;
+    }
+    nav {
+      background-color: #e0e0e0;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #8B0000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    main {
+      max-width: 90dvw;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #ccc;
+      background: #fff;
+    }
+    main h2 {
+      color: #8B0000;
+    }
+    main h3 {
+      color: #333;
+    }
+    main ul {
+      list-style: none;
+      padding: 0;
+    }
+    main ul li {
+      margin-bottom: 10px;
+    }
+    main ul li span {
+      color: #8B0000;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    thead tr {
+      background-color: #e0e0e0;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+    }
+    th {
+      color: #8B0000;
+    }
+    td:last-child {
+      color: #8B0000;
+      font-weight: bold;
+    }
+    .promo1 {
+      background-color: #ffe4b2;
+      border-left: 5px solid #8B0000;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .promo1 b {
+      color: #8B0000;
+    }
+    .promo2 {
+      background-color: #e0ffd8;
+      border-left: 5px solid #228B22;
+      padding: 15px;
+    }
+    .promo2 b {
+      color: #228B22;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      gap: 10px;
+    }
+    button[type="submit"] {
+      background-color: #8B0000;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #8B0000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    .menu {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .reservation {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      width: 100%;
+      min-width: 100%;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .form-styles {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 20px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f8f8f8; margin: 0; padding: 0;">
-  <header style="background-color: #8B0000; color: #fff; padding: 20px 0; text-align: center;">
-    <h1 style="margin: 0; font-size: 2.5em;">Restaurante Sabores de Chile</h1>
+<body>
+  <header>
+    <h1>Restaurante Sabores de Chile</h1>
     <p style="font-size: 1.2em; font-weight: bold;">Denominación legal: Sabores de Chile SpA</p>
-    <p style="font-size: 1.1em;">Gastronomía chilena tradicional en el corazón de Santiago</p>
-    <p style="font-size: 1.1em;"><b>Dirección:</b> Av. Providencia 1234, Santiago, Chile</p>
+    <p>Gastronomía chilena tradicional en el corazón de Santiago</p>
+    <p class="bold">Dirección: Av. Providencia 1234, Santiago, Chile</p>
   </header>
 
-  <nav style="background-color: #e0e0e0; padding: 10px 0; text-align: center;">
-    <a href="#menu" style="margin: 0 15px; color: #8B0000; font-weight: bold; text-decoration: none;">Menú</a>
-    <a href="#promociones" style="margin: 0 15px; color: #8B0000; font-weight: bold; text-decoration: none;">Promociones</a>
-    <a href="#reserva" style="margin: 0 15px; color: #8B0000; font-weight: bold; text-decoration: none;">Reservas</a>
+  <nav>
+    <a href="#menu">Menú</a>
+    <a href="#promociones">Promociones</a>
+    <a href="#reserva">Reservas</a>
   </nav>
 
-  <main style="max-width: 800px; margin: 30px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px #ccc;">
-    <section id="menu">
-      <h2 style="color: #8B0000;">Menú</h2>
-      <h3 style="color: #333;">Platos principales</h3>
-      <ul>
-        <li><b>Cazuela de Vacuno</b> <span style="color: #8B0000; font-weight: bold;">$8.500</span></li>
-        <li><b>Pastel de Choclo</b> <span style="color: #8B0000; font-weight: bold;">$7.900</span></li>
-        <li><b>Empanadas de Pino</b> <span style="color: #8B0000; font-weight: bold;">$2.000</span></li>
-        <li><b>Porotos Granados</b> <span style="color: #8B0000; font-weight: bold;">$7.500</span></li>
-      </ul>
-      <h3 style="color: #333;">Postres</h3>
-      <ul>
-        <li><b>Leche Asada</b> <span style="color: #8B0000; font-weight: bold;">$3.000</span></li>
-        <li><b>Mote con Huesillo</b> <span style="color: #8B0000; font-weight: bold;">$2.500</span></li>
-        <li><b>Torta de Mil Hojas</b> <span style="color: #8B0000; font-weight: bold;">$3.500</span></li>
-      </ul>
-      <h3 style="color: #333;">Bebidas</h3>
-      <ul>
-        <li><b>Jugo Natural</b> <span style="color: #8B0000; font-weight: bold;">$2.000</span></li>
-        <li><b>Chicha</b> <span style="color: #8B0000; font-weight: bold;">$2.500</span></li>
-        <li><b>Vino de la Casa</b> <span style="color: #8B0000; font-weight: bold;">$3.000</span></li>
-        <li><b>Bebidas Gaseosas</b> <span style="color: #8B0000; font-weight: bold;">$1.500</span></li>
-      </ul>
-      <h3 style="color: #333;">Especialidades de la casa</h3>
-      <ul>
-        <li><b>Curanto en Olla</b> <span style="color: #8B0000; font-weight: bold;">$12.000</span></li>
-        <li><b>Parrillada Chilena</b> <span style="color: #8B0000; font-weight: bold;">$15.000</span></li>
-      </ul>
+  <main>
+    <h2>Menú</h2>
+    <section id="menu" class="menu">
+      <div>
+        <h3>Platos Principales</h3>
+        <table>
+          <thead>
+            <tr>
+          <th>Plato</th>
+          <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+          <td>Cazuela de Vacuno</td>
+          <td>$8.500</td>
+            </tr>
+            <tr>
+          <td>Pastel de Choclo</td>
+          <td>$7.900</td>
+            </tr>
+            <tr>
+          <td>Empanadas de Pino</td>
+          <td>$2.000</td>
+            </tr>
+            <tr>
+          <td>Porotos Granados</td>
+          <td>$7.500</td>
+            </tr>
+            <tr>
+          <td><b>Curanto en Olla</b></td>
+          <td>$12.000</td>
+            </tr>
+            <tr>
+          <td><b>Parrillada Chilena</b></td>
+          <td>$15.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div>
+        <h3>Postres</h3>
+        <table>
+          <thead>
+            <tr>
+          <th>Postre</th>
+          <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+          <td>Leche Asada</td>
+          <td>$3.000</td>
+            </tr>
+            <tr>
+          <td>Mote con Huesillo</td>
+          <td>$2.500</td>
+            </tr>
+            <tr>
+          <td>Torta de Mil Hojas</td>
+          <td>$3.500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+      <div>
+        <h3>Bebidas</h3>
+          <table>
+            <thead>
+              <tr>
+            <th>Bebida</th>
+            <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td>Jugo Natural</td>
+            <td>$2.000</td>
+              </tr>
+              <tr>
+            <td>Chicha</td>
+            <td>$2.500</td>
+              </tr>
+              <tr>
+            <td>Vino de la Casa</td>
+            <td>$3.000</td>
+              </tr>
+              <tr>
+            <td>Bebidas Gaseosas</td>
+            <td>$1.500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </section>
 
     <section id="promociones" style="margin-top: 40px;">
-      <h2 style="color: #8B0000;">Promociones Especiales</h2>
-      <div style="background-color: #ffe4b2; border-left: 5px solid #8B0000; padding: 15px; margin-bottom: 20px;">
-        <b style="color: #8B0000;">¡2x1 en Empanadas de Pino!</b><br>
+      <h2>Promociones Especiales</h2>
+      <div class="promo1">
+        <b>¡2x1 en Empanadas de Pino!</b><br>
         <span>Disfruta de nuestra promoción especial todos los lunes. <b>Válido hasta el 30 de junio.</b></span>
       </div>
-      <div style="background-color: #e0ffd8; border-left: 5px solid #228B22; padding: 15px;">
-        <b style="color: #228B22;">Menú Ejecutivo</b><br>
+      <div class="promo2">
+        <b>Menú Ejecutivo</b><br>
         <span>Incluye plato principal, bebida y postre por <b>$10.000</b>. <b>Vigencia:</b> de lunes a viernes, 12:00 a 16:00 hrs.</span>
       </div>
     </section>
 
-    <section id="reserva" style="margin-top: 40px;">
-      <h2 style="color: #8B0000;">Reserva en línea</h2>
-      <form style="display: flex; flex-direction: column; max-width: 400px; gap: 10px;" autocomplete="off">
-        <label for="nombre"><b>Nombre:</b></label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="email"><b>Email:</b></label>
-        <input type="email" id="email" name="email" required>
-        <label for="fecha"><b>Fecha de reserva:</b></label>
-        <input type="date" id="fecha" name="fecha" required>
-        <label for="personas"><b>Número de personas:</b></label>
-        <input type="number" id="personas" name="personas" min="1" max="20" required>
-        <button type="submit" style="background-color: #8B0000; color: #fff; font-weight: bold; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Reservar</button>
+    <h2>Reserva en línea</h2>
+    <section id="reserva" style="margin-top: 40px;" >
+      <form action="/submit-reservation" method="post" autocomplete="off" style="flex-direction: row; align-items: flex-end; gap: 20px;" class="reservation">
+      <form action="/submit-reservation" method="post" autocomplete="off" class="reservation form-styles">
+          <label for="nombre"><b>Nombre:</b></label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="email"><b>Email:</b></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="fecha"><b>Fecha de reserva:</b></label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <label for="personas"><b>Número de personas:</b></label>
+          <input type="number" id="personas" name="personas" min="1" max="20" required>
+        </div>
+        <button type="submit">Reservar</button>
       </form>
     </section>
   </main>
 
-  <footer style="background-color: #8B0000; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px;">
+  <footer>
     &copy; 2025 Sabores de Chile SpA. Todos los derechos reservados.
   </footer>
 </body>
